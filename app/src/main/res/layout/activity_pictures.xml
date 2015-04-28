@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn_picturebuttonback"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickPictureback"
+                        android:text="@string/backbutton" />
+
+                    <Button
+                        android:id="@+id/btn_picturebutton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickPicture"
+                        android:text="@string/nextbutton" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btn_picturebuttonbackten"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickPicturebackTen"
+                        android:text="@string/backbuttonten" />
+
+                    <Button
+                        android:id="@+id/btn_picturebuttonten"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickPictureTen"
+                        android:text="@string/nextbuttonten" />
+                </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/btn_getgeneral"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickGeneral"
+                android:text="@string/viewgeneral" />
+            <TextView
+                android:id="@+id/txt_picture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="@string/picturename" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

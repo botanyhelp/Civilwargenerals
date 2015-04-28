@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Civilwargenerals">
+
+    <ScrollView
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world" />
+
+            <Button
+                android:id="@+id/btn_getunion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:onClick="onClickUnion"
+                android:text="@string/union" />
+
+            <Button
+                android:id="@+id/btn_getconfederate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_getunion"
+                android:onClick="onClickConfederate"
+                android:text="@string/confederate" />
+
+            <Button
+                android:id="@+id/btn_getall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_getconfederate"
+                android:onClick="onClickAll"
+                android:text="@string/all" />
+
+            <Button
+                android:id="@+id/btn_getinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_getall"
+                android:onClick="onClickInfo"
+                android:text="@string/infobutton" />
+
+            <Button
+                android:id="@+id/btn_pictures"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_getinfo"
+                android:onClick="onClickPictures"
+                android:text="@string/pictures" />
+            <EditText
+                android:id="@+id/txt_carriersearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_pictures"
+                android:hint="@string/searchhint" />
+            <EditText
+                android:id="@+id/txt_carriersearchtwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_carriersearch"
+                android:hint="@string/searchhint" />
+            <EditText
+                android:id="@+id/txt_carriersearchthree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_carriersearchtwo"
+                android:hint="@string/searchhint" />
+            <Button
+                android:id="@+id/btn_searchforcarriers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_carriersearchthree"
+                android:onClick="onClickSearch"
+                android:text="@string/searchforcarriers" />
+
+            <ImageView
+                android:id="@+id/imagedetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_searchforcarriers"
+                android:contentDescription="@string/general"
+                android:scaleType="fitCenter"
+                android:src="@drawable/civilwar"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_general"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagedetail"
+                android:padding="10dp"
+                android:text="@string/civilwar"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
